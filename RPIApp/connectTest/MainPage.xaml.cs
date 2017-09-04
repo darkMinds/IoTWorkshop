@@ -33,6 +33,7 @@ namespace connectTest
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public static MainPage Instance { get; private set; }
 
         private const string IotHubUri = "GreenHouse-IOT-HUB.azure-devices.net";
         private const string DeviceKey = "BNKN9mefkcawRIC6KhJy+MctdJ00OVgh3+DOtaOxOJM=";
@@ -67,6 +68,7 @@ namespace connectTest
             Debug.WriteLine("Device Activated\n");
             _deviceClient = DeviceClient.Create(IotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey(DeviceId, DeviceKey), TransportType.Mqtt);
 
+            Instance = this;
             initMCP3008();
 
             InitGPIO();
@@ -190,8 +192,10 @@ namespace connectTest
                 var rawTempReading = temperatureData[0] << 8 | temperatureData[1];
                 var rawShifted = rawTempReading >> 4;
                 temperature = rawShifted * 0.0625f;
+                Instance.CurrentTemp.Text = temperature.ToString();
+
             }
-            
+
 
             return temperature;
         }
@@ -206,8 +210,10 @@ namespace connectTest
             {
                 _mcp3008.TransferFullDuplex(transmitBuffer, receiveBuffer);
                 result = ((receiveBuffer[1] & 3) << 8) + receiveBuffer[2];
+                Instance.CurrentHumidity.Text = result.ToString();
             }
-             
+            
+
             return result;
         }
 

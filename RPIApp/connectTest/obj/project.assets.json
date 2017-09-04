@@ -29028,20 +29028,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\edidavid\\.nuget\\packages\\": {}
+    "C:\\Users\\Liron\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edidavid\\Desktop\\connectTest - merged\\connectTest\\connectTest.csproj",
+      "projectUniqueName": "C:\\Users\\Liron\\Documents\\GitHub\\IoTWorkshop\\RPIApp\\connectTest\\connectTest.csproj",
       "projectName": "connectTest",
-      "projectPath": "C:\\Users\\edidavid\\Desktop\\connectTest - merged\\connectTest\\connectTest.csproj",
-      "packagesPath": "C:\\Users\\edidavid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edidavid\\Desktop\\connectTest - merged\\connectTest\\obj\\",
+      "projectPath": "C:\\Users\\Liron\\Documents\\GitHub\\IoTWorkshop\\RPIApp\\connectTest\\connectTest.csproj",
+      "packagesPath": "C:\\Users\\Liron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Liron\\Documents\\GitHub\\IoTWorkshop\\RPIApp\\connectTest\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\edidavid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Liron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

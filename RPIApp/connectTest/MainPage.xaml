@@ -7,8 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock  x:Name="TextB" HorizontalAlignment="Left" Height="337" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="340"/>
-
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="ca.jpeg"/>
+        </Grid.Background>
+        <TextBlock x:Name="ScenarioControls" HorizontalAlignment="Left" Height="37" Width="340">
+                    Current Temperature: <Run x:Name="CurrentTemp"/>
+                    <LineBreak/>
+                    Current Humidity: <Run x:Name="CurrentHumidity"/>
+        </TextBlock>
+        
     </Grid>
 </Page>
