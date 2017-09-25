@@ -1,1 +1,1 @@
-C:\Users\Liron\Documents\GitHub\IoTWorkshop\RPIApp\connectTest\connectTest.csproj;arm
+C:\Users\noamg\Source\Repos\IoTWorkshop\RPIApp\connectTest\connectTest.csproj;arm

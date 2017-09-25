@@ -154,7 +154,7 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.4.2": {
+      "Microsoft.Azure.Devices.Client/1.5.0": {
         "type": "package",
         "dependencies": {
           "DotNetty.Buffers": "0.4.6",
@@ -2937,7 +2937,7 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.4.2": {
+      "Microsoft.Azure.Devices.Client/1.5.0": {
         "type": "package",
         "dependencies": {
           "DotNetty.Buffers": "0.4.6",
@@ -5750,7 +5750,7 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.4.2": {
+      "Microsoft.Azure.Devices.Client/1.5.0": {
         "type": "package",
         "dependencies": {
           "DotNetty.Buffers": "0.4.6",
@@ -8599,7 +8599,7 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.4.2": {
+      "Microsoft.Azure.Devices.Client/1.5.0": {
         "type": "package",
         "dependencies": {
           "DotNetty.Buffers": "0.4.6",
@@ -11421,7 +11421,7 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.4.2": {
+      "Microsoft.Azure.Devices.Client/1.5.0": {
         "type": "package",
         "dependencies": {
           "DotNetty.Buffers": "0.4.6",
@@ -14279,7 +14279,7 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.4.2": {
+      "Microsoft.Azure.Devices.Client/1.5.0": {
         "type": "package",
         "dependencies": {
           "DotNetty.Buffers": "0.4.6",
@@ -17101,7 +17101,7 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.4.2": {
+      "Microsoft.Azure.Devices.Client/1.5.0": {
         "type": "package",
         "dependencies": {
           "DotNetty.Buffers": "0.4.6",
@@ -19969,10 +19969,10 @@
         "lib/uap10.0/Microsoft.Azure.Amqp.pri"
       ]
     },
-    "Microsoft.Azure.Devices.Client/1.4.2": {
-      "sha512": "q06dbOMnxr54ay2FFPGzQaKinqi2X3qNBnyaZUeMVPPDGVRFT8btl8Ue55Hr2HyX4c3I/3p4bKwEM7GfLEyMbQ==",
+    "Microsoft.Azure.Devices.Client/1.5.0": {
+      "sha512": "VF+njZjnjjI0CzKbkJlARrmk/bl/sCdhqjZIlNF3zJymJKf+VYhFkW+RqrYjJx7pcmlZ+ye68qkqU0nV4dWCiA==",
       "type": "package",
-      "path": "microsoft.azure.devices.client/1.4.2",
+      "path": "microsoft.azure.devices.client/1.5.0",
       "files": [
         "build/native/Microsoft.Azure.Devices.Client.targets",
         "lib/net45/Microsoft.Azure.Devices.Client.dll",
@@ -19983,7 +19983,7 @@
         "lib/uap10.0/Microsoft.Azure.Devices.Client.XML",
         "lib/uap10.0/Microsoft.Azure.Devices.Client.dll",
         "lib/uap10.0/Microsoft.Azure.Devices.Client.pri",
-        "microsoft.azure.devices.client.1.4.2.nupkg.sha512",
+        "microsoft.azure.devices.client.1.5.0.nupkg.sha512",
         "microsoft.azure.devices.client.nuspec",
         "thirdpartynotice.txt"
       ]
@@ -29022,26 +29022,26 @@
       "Microsoft.ApplicationInsights >= 2.4.0",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.1.1",
-      "Microsoft.Azure.Devices.Client >= 1.4.2",
+      "Microsoft.Azure.Devices.Client >= 1.5.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.4.0",
       "Newtonsoft.Json >= 10.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Liron\\.nuget\\packages\\": {}
+    "C:\\Users\\noamg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Liron\\Documents\\GitHub\\IoTWorkshop\\RPIApp\\connectTest\\connectTest.csproj",
+      "projectUniqueName": "C:\\Users\\noamg\\Source\\Repos\\IoTWorkshop\\RPIApp\\connectTest\\connectTest.csproj",
       "projectName": "connectTest",
-      "projectPath": "C:\\Users\\Liron\\Documents\\GitHub\\IoTWorkshop\\RPIApp\\connectTest\\connectTest.csproj",
-      "packagesPath": "C:\\Users\\Liron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Liron\\Documents\\GitHub\\IoTWorkshop\\RPIApp\\connectTest\\obj\\",
+      "projectPath": "C:\\Users\\noamg\\Source\\Repos\\IoTWorkshop\\RPIApp\\connectTest\\connectTest.csproj",
+      "packagesPath": "C:\\Users\\noamg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\noamg\\Source\\Repos\\IoTWorkshop\\RPIApp\\connectTest\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Liron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\noamg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -29072,7 +29072,7 @@
       },
       "Microsoft.Azure.Devices.Client": {
         "target": "Package",
-        "version": "1.4.2"
+        "version": "1.5.0"
       },
       "Microsoft.NETCore.UniversalWindowsPlatform": {
         "target": "Package",
@@ -29100,7 +29100,7 @@
           },
           "Microsoft.Azure.Devices.Client": {
             "target": "Package",
-            "version": "1.4.2"
+            "version": "1.5.0"
           },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
