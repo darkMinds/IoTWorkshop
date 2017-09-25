@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Liron\Documents\GitHub\IoTWorkshop\RPIApp\connectTest\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-04T16:21:36.812</Modified>
+      <Modified>2017-09-17T13:59:17.854</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Liron\Documents\GitHub\IoTWorkshop\RPIApp\connectTest\bin\ARM\Debug\connectTest.exe">
       <PackagePath>entrypoint\connectTest.exe</PackagePath>
-      <Modified>2017-09-04T16:21:36.019</Modified>
+      <Modified>2017-09-17T13:59:16.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Liron\.nuget\packages\DotNetty.Buffers\0.4.6\lib\netstandard1.3\DotNetty.Buffers.dll">
       <PackagePath>DotNetty.Buffers.dll</PackagePath>
@@ -655,7 +655,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Liron\Documents\GitHub\IoTWorkshop\RPIApp\connectTest\bin\ARM\Debug\connectTest.xr.xml">
       <PackagePath>connectTest.xr.xml</PackagePath>
-      <Modified>2017-09-04T16:19:52.489</Modified>
+      <Modified>2017-09-17T13:51:53.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -664,11 +664,11 @@
     <AppxPackagedFile Include="C:\Users\Liron\Documents\GitHub\IoTWorkshop\RPIApp\connectTest\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-04T16:21:36.513</Modified>
+      <Modified>2017-09-17T13:59:17.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Liron\Documents\GitHub\IoTWorkshop\RPIApp\connectTest\bin\ARM\Debug\Core\connectTest.exe">
       <PackagePath>connectTest.exe</PackagePath>
-      <Modified>2017-09-04T16:21:36.808</Modified>
+      <Modified>2017-09-17T13:59:17.849</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

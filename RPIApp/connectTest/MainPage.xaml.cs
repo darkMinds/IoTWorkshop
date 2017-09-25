@@ -42,9 +42,7 @@ namespace connectTest
         private static readonly Random Rand = new Random();
         private static DeviceClient _deviceClient;
         private static int monitoredPlantID = getMonitoredPlantID();
-       
 
-        ///////////////////// hello blinky merge in
         private const int LED_PIN = 5;
         private static GpioPin pin;
         private static GpioPinValue pinValue;
@@ -52,7 +50,6 @@ namespace connectTest
         private SolidColorBrush grayBrush = new SolidColorBrush(Windows.UI.Colors.LightGray);
 
         
-        ///////////////////////// humidity merge in
 
 
 
@@ -135,11 +132,12 @@ namespace connectTest
             return 1;
         }
 
+       
         private static int getMonitoredPlantID()
         {
             return 5;
         }
-
+        
         private static async void SendDeviceToCloudMessagesAsync()
         {
             while (true)
@@ -162,7 +160,7 @@ namespace connectTest
                 await _deviceClient.SendEventAsync(message);
                 Debug.WriteLine("{0} > Sending message: {1}", DateTime.Now, messageString);
 
-                await Task.Delay(15000);
+                await Task.Delay(5000);
             }
         }
 
@@ -248,6 +246,11 @@ namespace connectTest
             }
             else
                 InitGPIO();
+        }
+
+        private void ScenarioControls_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

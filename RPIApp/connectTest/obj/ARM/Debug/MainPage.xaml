@@ -7,16 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid Background="White">
+        <!--
         <Grid.Background>
             <ImageBrush ImageSource="ca.jpeg"/>
-        </Grid.Background>
-        <TextBlock x:ConnectionId='1' x:Name="ScenarioControls" HorizontalAlignment="Left" Height="37" Width="340">
+            </Grid.Background>
+        -->
+        <Image Source="ca.jpeg" HorizontalAlignment="Center" Margin="109,10,108,148" Width="423"/>
+
+        <TextBlock x:ConnectionId='1' x:Name="ScenarioControls" FontSize="20" HorizontalAlignment="Center" Width="269" Margin="198,280,173,10"                                                     >
                     Current Temperature: <Run x:ConnectionId='2' x:Name="CurrentTemp"/>
                     <LineBreak/>
                     Current Humidity: <Run x:ConnectionId='3' x:Name="CurrentHumidity"/>
         </TextBlock>
-        
+
     </Grid>
 </Page>
 
