@@ -1801,3 +1801,17 @@ blockquote {
 .uipasta-credit a:hover {
     color: #333333;
 }
+
+/*figure*/
+figure {
+    display: inline-block;
+    margin: 20px;
+}
+
+    figure img {
+        vertical-align: top;
+    }
+
+    figure figcaption {
+        text-align: center;
+    }

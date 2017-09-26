@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\RPIApp"
+    "\\RPIApp",
+    "\\website"
   ],
-  "SelectedNode": "\\RPIApp\\connectTest.sln",
+  "SelectedNode": "\\website\\index.html",
   "PreviewInSolutionExplorer": false
 }

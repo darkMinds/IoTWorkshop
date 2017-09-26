@@ -103,7 +103,14 @@
                                         <div class="post-title">
                                             <h1>What is Cannabisitter?</h1>
                                         </div>
-<p>Cannabisitter is an automatic home irrigition solution for plants. It provide you the opportunity to grow up plants without worried about the plant state, its assure that your plant will receive water by some parameters. Using Raspberry Pi 2 and some hardware components we are able to monitor your plant and watering the plant when it needed. You can manged your plants using a mobile platform UI that provide you add a new planet, statistics about your plants state and more. </p>
+                                        <p>Cannabisitter is an automatic home irrigition solution for plants. It provides you the opportunity to grow your plants at home or in your garden with no need to water it on your own. Cannabisitter monitors your plants' soil moisture (individually for each plant), along with the temperature in the plants' area, and assures that your plants will receive water right on time, and only when they need! Moreover - you can monitor your plants using our Android app. Using the app, you are able to add a new plant to your plants list right when you get it (by scanning a special QR code), monitor your plants statistics, and more. </p>
+                                       <br/>
+                                        <div class="post-image">
+                                            <figure>
+                                                <img src="images/blog/11.jpg" alt="">
+                                                <figcaption>A general image of the Cannabisitter prototype</figcaption>
+                                            </figure>
+                                        </div>
 	                            </div>
 	                            <!-- Blog Post End -->
 
@@ -139,18 +146,25 @@
 	                                <div class="post-title">
 	                                    <h1>User Interface</h1>
 	                                </div>
+	                                <h4>UWP App</h4>
 	                                <div class="post-image">
-	                                    <img src="images/blog/1.jpg" alt="">
+	                                    <img src="images/blog/uwp_screen.jpg" alt=""/>
+	                                </div>
+	                                <p>This app operates the RP2, along with giving the user an interface where he or she can constantly monitor the values measured by the RP2.</p>
+	                                <br/>
+	                                <h4>Android App</h4>
+	                                <div class="post-image">
+	                                    <img src="images/blog/screenshots.jpg" alt="">          
 	                                </div>
 	                                <p>
-	                                    The UI component a mobile application that provide the user monitored and managed his plants.
+	                                    The main UI component of the system - a mobile (Android) application which provides the user lots of functions:
 	                                    <br>
-	                                    The user can login to his erea, add a new plant for his plants list and control the plants monitoring.
-	                                    <br>
-	                                    In addition, we provided to the user some statistics about it's plants state: Watering, temperature and humidity.
+	                                    The user can login to his personal zone and view his plants list. Adding a new plant to the list is done simply by scanning a QR code (which can be attached to the plant in any plants store). Monitoring the user's plants is simple as well - viewing a single plant, the user can see the last irrigation time, along with graphs of the recent measurments of that plant (graphs were created using the <a href="http://www.android-graphview.org/"> android-graphview</a> library).
 	                                </p>
 	                            </div>
 	                            <!-- Blog Post End -->
+                                
+
 
 
 
@@ -158,35 +172,34 @@
 	                            <div class="col-md-12 blog-post">
 
 	                                <div class="post-title">
-	                                    <h1>Sensors</h1>
-	                                    <div class="post-image">
-	                                        <img src="images/blog/11.jpg" alt="">
-	                                    </div>
+	                                    <h1>Hardware</h1>
 	                                </div>
-	                                <h4>Raspberry Pi 2 with Wifi Dongle, installed with Windows 10</h4>
+	                                <h4>Raspberry Pi 2</h4>
 	                                <div class="post-image">
 	                                    <img src="images/blog/2.jpg" alt="">
 	                                </div>
 	                                <p>
-	                                    The Raspberry Pi 2 is a credit card sized mini personal computer that lets software developers dive right in and start coding - no additional components needed. Raspberry has its roots in education but should be considered for any purposes where you would otherwise use a PC. In our product, the RP2 acts at the brain: it is responsible for giving out commands to the various components and communicating with the cloud and through it, with the user.
+	                                    The Raspberry Pi 2 (RP2 in short) is a credit card sized mini personal computer that lets software developers dive right in and start coding - no additional components needed. Raspberry has its roots in education but should be considered for any purposes where you would otherwise use a PC. Cannabisitter uses the RP2 as its main core: the RP2 controls the different hardware components connected to it through the GPIO pins, allowing the user to collect data and to water the plants when needed. The RP2 runs a Windows 10 IoT Core operating system, on which we run our UWP app which monitors the plants. Connectivity is achieved using a WiFi dongle.
 	                                </p>
-	                                <h4>Temperature Sensor</h4>
-	                                <a href="https://www.sparkfun.com/datasheets/Sensors/Temperature/tmp102.pdf">TMP102</a>
+                                    <br>
+	                                <h4>SparkFun Digital Temperature Sensor Breakout - TMP102</h4>
+	                                <a href="https://www.sparkfun.com/datasheets/Sensors/Temperature/tmp102.pdf">Datasheet</a>
 	                                <div class="post-image">
 	                                    <img src="images/blog/3.jpg" alt="">
 	                                </div>
 	                                <p>
-	                                    The TMP102 Temperature sensor measure the temperature and send the measurment using I2C Protocol. the sensor connect to I2C enters of the Raspberry Pi,
-	                                    we measure the temperature of the plant and send the data to azure with the IOT-HUB.
+	                                    The TMP102 temperature sensor is connected to the RP2 via the I2C GPIO pins. It measures the temperature and sends the data to the RP2, which passes it forward to the data to the database through Azure IoT Hub.
 	                                </p>
-	                                <h4>Soil Moisture Sensor</h4>
-	                                <a href="https://www.sparkfun.com/products/13322">SEN13322</a>
+	                                <br>
+	                                <h4>SparkFun Soil Moisture Sensor</h4>
+	                                <a href="https://cdn.sparkfun.com/datasheets/Sensors/Biometric/SparkFun_Soil_Moisture_Sensor.pdf">Datasheet</a>
 	                                <div class="post-image">
 	                                    <img src="images/blog/4.jpg" alt="">
 	                                </div>
 	                                <p>
-	                                    The soil moisture sensor is an analog device, it measure the soil moisture and we convert his measurment using Analog to Digital Converter: ADC – MCP3008, the data sends to the Azure using IOT-HUB.
+	                                    The soil moisture sensor is an analog device which measures the soil moisture (namely, it measures how wet the plant's soil is). Since the output signal of that sensor is analog while the RP2 can only handle digital signals, we convert the analog signal to a digital signal using an ADC (Adafruit MCP3008). Just like the TMP102, this sensor also sends the measurments to the RP2, which passes them to the database through Azure IoT Hub.
 	                                </p>
+                                    <br/>
 	                                <h4>Tap Irrigation System</h4>
 	                                <div class="post-image">
 	                                    <img src="images/blog/5.jpg" alt="">
@@ -195,19 +208,30 @@
 	                                <p>
 	                                    A solenoid valve is an electromechanically operated valve. The valve is controlled by an electric current through a solenoid. We used a 12V power supply controlled by a BJT.
 	                                    <br>
-	                                    The actuator releases water when azure function send to RP2 a command for watering following plant state that measure from RP2(temperature and soil moisture measurments).
+	                                    The actuator releases allows water to go through when our Azure Logic Function sends a watering command to the RP2. The command is being sent according to the data collected by the sensors (temperature and soil moisture measurments).
 	                                </p>
 	                                <h6>LED</h6>
-	                                <a href="https://www.sparkfun.com/products/9856">LED</a>
 	                                <p>
-	                                    the LED is providing the user indicate that the actuator works
+	                                    In order to give the user another indication that an irrigation occurs, we provide a red LED that lights whenever the actuatur is open.
 	                                </p>
+                                    
+                                    <br/>
+                                    
+	                                <div class="post-title">
+	                                    <h1>Putting it all together...</h1>
+	                                </div>
+                                    <p>The following scheme shows how all the different components mentioned earlier are being put together in order to run the Cannabisitter. It shows how the different parts of the system are connected and communicate.</p>
+	                                <figure>
+                                        <img src="images/blog/schema.png" alt="" style='height: 100%; width: 100%; object-fit: contain' />
+	                                </figure>
+                                    
 	                            </div>
 	                            <!-- Blog Post End -->
-	                            <div class="col-md-12 text-center">
+
+	                            <!--<div class="col-md-12 text-center">
 	                                <a href="javascript:void(0)" id="load-more-post" class="load-more-button">Load</a>
 	                                <div id="post-end-message"></div>
-	                            </div>
+	                            </div>-->
 	                        </div>
                          </div>
                          </div>
