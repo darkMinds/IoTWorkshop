@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\RPIApp",
-    "\\website"
+    "\\website",
+    "\\website\\css"
   ],
   "SelectedNode": "\\website\\index.html",
   "PreviewInSolutionExplorer": false
