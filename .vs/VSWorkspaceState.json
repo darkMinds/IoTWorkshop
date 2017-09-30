@@ -3,8 +3,9 @@
     "",
     "\\RPIApp",
     "\\website",
-    "\\website\\css"
+    "\\website\\css",
+    "\\website\\js"
   ],
-  "SelectedNode": "\\website\\index.html",
+  "SelectedNode": "\\website\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
